@@ -8,15 +8,96 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="3dp"
-        android:src="@drawable/oykun_profile_pic" />
+
+        android:layout_marginTop="13.5dp"
+        android:src="@drawable/tobias_profile_pic" />
 
     <TextView
         android:id="@+id/name_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="13.5dp"
+        android:layout_toRightOf="@id/profile_picture"
+        android:fontFamily="@font/robotomedium"
         android:text="@string/tobias_van_schneider"
+        android:textColor="@color/color_name_user"
+        android:textSize="14sp" />
 
+    <TextView
+        android:id="@+id/arroba_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="14.5dp"
+        android:layout_toRightOf="@id/name_user"
+        android:fontFamily="@font/robotolight"
+        android:text="@string/vanschneider"
+        android:textColor="@color/color_arroba_user"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="13.5dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@id/arroba_user"
+        android:fontFamily="@font/robotolight"
+        android:gravity="right"
+        android:text="20s"
+        android:textColor="@color/color_arroba_user"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tweet_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_user"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="16dp"
+        android:fontFamily="@font/robotolight"
+        android:text="@string/my_girlfriend"
+        android:textColor="@color/color_name_user"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/tweet_image"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_below="@+id/tweet_text"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/tobias_tweet_image"
+        android:layout_marginTop="9dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tweet_image"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="72dp">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:src="@drawable/reply"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="48.6dp"
+            android:background="@color/transparent"
+            android:src="@drawable/retweet"/>
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@color/transparent"
+            android:src="@drawable/like"/>
+
+    </LinearLayout>
 
 
 </RelativeLayout>
