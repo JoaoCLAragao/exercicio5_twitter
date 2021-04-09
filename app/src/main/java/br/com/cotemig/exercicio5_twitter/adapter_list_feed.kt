@@ -13,7 +13,7 @@ class adapter_list_feed(var context: Context, var feed: List<Post>) : BaseAdapte
 
         var view = LayoutInflater.from(context).inflate(R.layout.item_feed, null)
 
-        if (feed[position].profile_picture > 0) {
+        if (feed[position].profile_picture != 0) {
             var profile_picture = view.findViewById<ImageView>(R.id.profile_picture) // ID do meu XML Item_Lista
             profile_picture.setImageDrawable(context.getDrawable(feed[position].profile_picture)) // nome da variável na classe POST
         }
@@ -30,11 +30,12 @@ class adapter_list_feed(var context: Context, var feed: List<Post>) : BaseAdapte
         var tweet_text = view.findViewById<TextView>(R.id.tweet_text)
         tweet_text.text = feed[position].tweet_text
 
-        if (feed[position].tweet_image > 0) {
-            var tweet_image = view.findViewById<ImageView>(R.id.tweet_image)
+        var tweet_image = view.findViewById<ImageView>(R.id.tweet_image)
+        if (feed[position].tweet_image == 0) {
+            tweet_image.visibility = ImageView.GONE
+        }else{
             tweet_image.setImageDrawable(context.getDrawable(feed[position].tweet_image))
         }
-
         return view
     }
 

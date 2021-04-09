@@ -8,8 +8,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="13.5dp"
-        android:src="@drawable/tobias_profile_pic" />
+        android:layout_marginTop="13.5dp" />
 
     <TextView
         android:id="@+id/name_user"
@@ -19,7 +18,6 @@
         android:layout_marginTop="13.5dp"
         android:layout_toRightOf="@id/profile_picture"
         android:fontFamily="@font/robotomedium"
-        android:text="@string/tobias_van_schneider"
         android:textColor="@color/color_name_user"
         android:textSize="14sp" />
 
@@ -31,7 +29,6 @@
         android:layout_marginTop="14.5dp"
         android:layout_toRightOf="@id/name_user"
         android:fontFamily="@font/robotolight"
-        android:text="@string/vanschneider"
         android:textColor="@color/color_arroba_user"
         android:textSize="13sp" />
 
@@ -45,7 +42,6 @@
         android:layout_toRightOf="@id/arroba_user"
         android:fontFamily="@font/robotolight"
         android:gravity="right"
-        android:text="20s"
         android:textColor="@color/color_arroba_user"
         android:textSize="14sp" />
 
@@ -57,7 +53,6 @@
         android:layout_marginLeft="72dp"
         android:layout_marginRight="16dp"
         android:fontFamily="@font/robotolight"
-        android:text="@string/my_girlfriend"
         android:textColor="@color/color_name_user"
         android:textSize="15sp" />
 
@@ -68,8 +63,7 @@
         android:layout_below="@+id/tweet_text"
         android:layout_marginLeft="72dp"
         android:layout_marginTop="9dp"
-        android:layout_marginRight="16dp"
-        android:background="@drawable/tobias_tweet_image" />
+        android:layout_marginRight="16dp" />
 
     <LinearLayout
         android:layout_width="match_parent"

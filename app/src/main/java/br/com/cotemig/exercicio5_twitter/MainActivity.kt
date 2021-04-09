@@ -2,6 +2,7 @@ package br.com.cotemig.exercicio5_twitter
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.item_feed.*
 
 class MainActivity : AppCompatActivity() {
@@ -54,6 +55,7 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
-        
+        list_feed.adapter = adapter_list_feed(this, feed)
+
     }
 }
