@@ -8,7 +8,6 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="16dp"
-
         android:layout_marginTop="13.5dp"
         android:src="@drawable/tobias_profile_pic" />
 
@@ -37,6 +36,7 @@
         android:textSize="13sp" />
 
     <TextView
+        android:id="@+id/time_post"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -67,35 +67,36 @@
         android:layout_height="135dp"
         android:layout_below="@+id/tweet_text"
         android:layout_marginLeft="72dp"
+        android:layout_marginTop="9dp"
         android:layout_marginRight="16dp"
-        android:background="@drawable/tobias_tweet_image"
-        android:layout_marginTop="9dp"/>
+        android:background="@drawable/tobias_tweet_image" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_below="@id/tweet_image"
-        android:layout_marginTop="15dp"
-        android:layout_marginLeft="72dp">
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal">
 
         <ImageButton
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@color/transparent"
-            android:src="@drawable/reply"/>
+            android:src="@drawable/reply" />
 
         <ImageButton
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginHorizontal="48.6dp"
             android:background="@color/transparent"
-            android:src="@drawable/retweet"/>
+            android:src="@drawable/retweet" />
+
         <ImageButton
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:background="@color/transparent"
-            android:src="@drawable/like"/>
+            android:src="@drawable/like" />
 
     </LinearLayout>
 
